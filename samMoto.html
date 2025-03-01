@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Moto</title>
+    <link rel="stylesheet" href="style.CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+<body>
+    <section class="header">
+        <nav>
+            <a href="Sam Moto.html"><img src="logo.png"></a>
+            <div class="nav-links">
+            <i class="fa-solid fa-circle-xmark"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a id="aboutPage" href="#" onclick="openAbout()">ABOUT</a></li>
+                    <li><a href="#" onClick="openService()">SERVICE</a></li>
+                    <li><a href="#" id="contactLink" onclick="openContact()">CONTACT US</a></li> 
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+<div class="textbox">
+    <h1>SAM MOTO</h1>
+    <p>Tyre dealer excelling in providing motorcycle, scooter, and two-wheeler tyres and repairs. </p>
+    <a href="https://www.google.com/maps/place/32%C2%B006'47.5%22N+76%C2%B025'09.0%22E/@32.1132064,76.4191516,17z/data=!3m1!4b1!4m4!3m3!8m2!3d32.1132064!4d76.4191516?entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D" class="Visit-btn" target="_blank">Visit us to Know more</a>    
+</div>
+
+    </section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>General Maintenance</h3>
+            <p>Oil changes, tire checks, brake inspection, and more.</p>
+        </div>
+        <div class="service-item">
+            <h3>Engine Repairs</h3>
+            <p>Comprehensive engine diagnostics and repairs.</p>
+        </div>
+        <div class="service-item">
+            <h3>Electrical Services</h3>
+            <p>Battery replacements, electrical system troubleshooting.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section class="link_body">
+    <h1>SERVICES AVAILABLE</h1>
+    <main class="maincontent">
+        <div class="content-grid">
+        <div class="article"><a href="">Bike Service</a></div>
+        <div class="article"><a href="">Tire Change</a></div>
+        <div class="article"><a href=""> Insurance Agents</a></div>
+        <div class="article"><a href="">Custom Upgrades</a></div>
+        <div class="article"><a href="">Paint</a></div>
+        <div class="article"><a href="">Buy Parts</a></div>
+        </div>
+        </main>
+</section>
+
+<section id="contact-form-section" class="contact-section">
+  <h2>Contact Us</h2>
+  <form id="contactForm" class="contact-form" method="POST" action="http://localhost:3000/submit-form">
+      <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required pattern="[0-9]{10}" />
+      </div>
+      <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+      </div>
+      <div class="form-group">
+          <label for="enquiry">Enquiry</label>
+          <textarea id="enquiry" name="enquiry" placeholder="Write your enquiry" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+  </form>
+</section>
+
+
+
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>We provide high-quality motorcycle repair services to keep your bike running like new. Our expert mechanics are dedicated to offering fast and reliable service.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#">General Repairs</a></li>
+          <li><a href="#">Engine Tune-ups</a></li>
+          <li><a href="#">Tire Replacements</a></li>
+          <li><a href="#">Custom Modifications</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul>
+          <li><strong>Phone:</strong> (+91) 456-7890</li>
+          <li><strong>Email:</strong> info@motobikeservice.com</li>
+          <li><strong>Address:</strong> 123 Bike Street, Motoville, INDIA</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com" class="social-icon">Facebook</a></li>
+          <li><a href="https://www.instagram.com" class="social-icon">Instagram</a></li>
+          <li><a href="https://www.x.com" class="social-icon">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 MotoBike Service. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
